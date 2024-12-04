@@ -1,0 +1,19 @@
+{   "model": "bert",
+    "pretrained_checkpoint": "bert-base-uncased",
+    "optimizer": "AdaMod",
+    "epoch": 10,
+    "warmup_step": 0,
+    "save": "./checkpoint/sst2_bert_adamod",
+    "seed": 0,
+    "optimizer_params": {
+        "lr": 1e-4,
+        "weight_decay": 0,
+        "betas": [0.9, 0.999],
+        "beta3": 0.999,
+        "eps": 1e-4},
+    "dataset_params": {
+        "batch_size": 32,
+        "test_batch_size": 8,
+        "shuffle": true
+    }
+}

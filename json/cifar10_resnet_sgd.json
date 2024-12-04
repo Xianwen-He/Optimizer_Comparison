@@ -1,0 +1,17 @@
+{   "model": "resnet",
+    "optimizer": "SGD",
+    "epoch": 100,
+    "save": "./checkpoint/cifar10_resnet_sgdv2",
+    "seed": 0,
+    "optimizer_params": {
+        "lr": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 5e-4
+    },
+    "dataset_params": {
+        "batch_size": 128,
+        "test_batch_size": 64,
+        "shuffle": true
+    },
+    "checkpoint": ""
+}
